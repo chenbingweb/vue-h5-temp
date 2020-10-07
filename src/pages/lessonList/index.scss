@@ -1,0 +1,33 @@
+.lesson_list_page
+{
+    box-sizing: border-box;
+    padding-top: 1.2rem;
+    .tab_box
+    {
+
+        position:fixed;
+        left:50%;
+        transform: translateX(-50%);
+        top:0;
+        width:100%;
+        z-index: 9999;
+        height: 1.3rem;
+        background-color: #fff;
+        .van-tabs__line {
+  
+            background-color: #EB5428;
+     
+            width: .96rem!important;
+        }
+        .title_select_name
+        {
+            color:#666666;
+            font-size: 0.35rem;
+        }
+        .selected
+        {
+            color:#FF4400!important;
+            font-size: 0.43rem!important;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.center_page
+{
+    .header
+    {
+        width: 10rem;
+        height: 3.733333rem;
+        background: url("../../images/center_bg.jpg") no-repeat center center;
+        background-size: 100% 100%;
+        box-sizing: border-box;
+        padding-left: .64rem;
+        .photo
+        {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: rgba($color: #fff, $alpha: 0.2);
+            // padding-top: .04rem
+        }
+        .user_name
+        {
+            font-size: .453333rem;
+            color:#ffffff;
+            padding-left: .266667rem;
+            width: 2.666667rem;
+        }
+    }
+    .nav_box
+    {
+        background: #fff;
+        .nav_item:last-child
+        {
+            border:none;
+        }
+        .nav_item
+        {
+            width: 9.333333rem;
+            height: 1.333333rem;
+            margin: 0 auto;
+            border-bottom: 1px solid #f1f1f1;
+            font-size: .373333rem;
+            color:#323439;
+           .nav_1
+           {
+            padding-left: .933333rem;
+            background: url("../../images/c_1.png")  no-repeat .133333rem center;
+            background-size: .426667rem .48rem;
+           }
+           .nav_2
+           {
+               padding-left: .933333rem;
+               background: url("../../images/c_2.png")  no-repeat .133333rem center;
+               background-size: .48rem .506667rem;
+           }
+            .nav_3
+            {
+                padding-left: .933333rem;
+                background: url("../../images/c_3.png")  no-repeat .133333rem center;
+                background-size: .426667rem .453333rem;
+            }
+            .nav_4
+            {
+                padding-left: .933333rem;
+                background: url("../../images/c_4.png")  no-repeat .133333rem center;
+                background-size: .506667rem .493333rem;
+            }
+        }
+        .nav_item::after
+        {
+            content:'';
+            display: block;
+            width: .133333rem;
+            height: .24rem;
+            background: url("../../images/arr_left.png") no-repeat center;
+            background-size: 100% 100%;
+        }
+    }
+}

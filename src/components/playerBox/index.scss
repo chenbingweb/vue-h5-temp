@@ -1,0 +1,258 @@
+.player_box_inner
+{
+    background-color: #fff;
+    box-sizing: border-box;
+    // padding-top: 0.51rem;
+    padding-bottom: 0.4rem;
+    video{
+        
+        object-fit:cover!important;  
+    }
+    .box_audio
+    {
+        width: 10rem;
+        margin:0 auto;
+        min-height: 4rem;
+        img
+        {
+            // width: 4.666667rem;
+            // height: 4.666667rem;
+            // margin-top: 0.51rem;
+        }
+    }
+    .lesson_title_audio
+    {
+        text-align: center;
+        font-size: 0.4rem;
+        color:#333333;
+        margin-top: 0.53rem;
+        padding: 0 0.1rem;
+    }
+    .process::before
+    {
+        content: '';
+        display: block;
+        width:0.16rem;
+        height: 0.16rem;
+        background-color: #F84E35;
+        border-radius: 50%;
+        transform: translateX(0.1rem);
+    }
+    .process::after
+    {
+        content: '';
+        display: block;
+        width:0.16rem;
+        height: 0.16rem;
+        // background-color: #F84E35;
+        background-color: #ddd;
+        border-radius: 50%;
+        transform: translateX(-0.1rem);
+       // z-index: -9999;
+       transition: all linear 0.1s;
+    }
+    .load_ok::after
+    {
+        background-color: #F84E35;
+    }
+    .process
+    {
+        height: 1.1rem;
+        position: relative;
+        .van-slider--disabled
+        {
+            opacity: 1!important;
+        }
+        .van-slider__bar
+        {
+            background-color:transparent!important;
+        }
+        .van-slider, .van-slider__bar
+        {
+            background-color:transparent!important;
+        }
+        .relative
+        {
+            position: relative;
+        }
+        .loading_process
+        {
+            position: absolute;
+            left:0;
+            top:50%;
+            transform: translateY(-50%);
+            height: 0.09rem;
+            width: 100%;
+            background-color:#F84E35 ;
+            z-index: 0;
+            transition: width linear 0.1s;
+        }
+        .process_bg
+        {
+            // background-color: #F84E35;
+            background-color: #ddd;
+        }
+        .bar
+        {
+            width: 7.5rem;
+            height: 0.09rem;
+            
+
+        }
+        .p_c
+        {
+            width: 0.83rem;
+            height: 0.09rem;
+            // background-color: #F84E35;
+            background-color: #ddd;
+        }
+        .custom-button {
+            // width: 26px;
+            color: #fff;
+            font-size: 0.24rem;
+            line-height: .48rem;
+            text-align: center;
+            // background-color: #F84E35;
+            background: linear-gradient(to right,#ff0000,#ff5a00);
+            border-radius: 100px;
+            width: 1.8rem;
+            box-shadow: 0 0 4px 2px #e5dede;
+            z-index: 9999999;
+          }
+    }
+    .control_box_video
+    {
+        .video_btn
+        {
+            flex-direction: column;
+            width: 1.4rem;
+            height: 1.04rem;
+            font-size: 0.24rem;
+            color:#666666;
+            .vedio_icon
+            {
+                width: .506667rem;
+                height: .32rem;
+                background: url("../../images/play_video_icon.png") no-repeat center center;
+                background-size: 100% 100%;
+                margin-bottom: .133333rem;
+            }
+            .vedio_icon_list
+            {
+                width: .506667rem;
+                height: .32rem;
+                background: url("../../images/list_icon.png") no-repeat center center;
+                background-size: 100% 100%;
+                margin-bottom: .133333rem;
+            }
+        }
+       
+        .pre_play
+        {
+            width:1.2rem;
+            height: 1.2rem;
+            background: url("../../images/left_audio_icon.png") no-repeat center center;
+            background-size: .466667rem .493333rem;
+            
+        }
+        .play
+        {
+            width: 1.733333rem;
+            height: 1.733333rem;
+            background: url("../../images/audio_bg.png") no-repeat center center;
+            background-size: 100% 100%;
+            margin: 0 .933333rem;
+            .play_btn
+            {
+                width: 1.733333rem;
+                height: 1.733333rem;
+                background: url("../../images/audio_pause.png") no-repeat center center;
+                background-size: 100% 100%;
+            }
+            .pause_btn
+            {
+                width: 1.733333rem;
+                height: 1.733333rem;
+                background: url("../../images/audio_play.png") no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+        .pause
+        {
+            background-image: url("../../images/audio_play.png");
+        }
+        .next_play
+        {
+            width:1.2rem;
+            height: 1.2rem;
+           
+            background: url("../../images/right_audio_icon.png") no-repeat center center;
+            // background-color: red;
+            background-size: .466667rem .493333rem;
+        }
+       
+    }
+    .lession_list_box
+    {
+        .plist_title
+        {
+            background: url("../../images/list_icon.png") no-repeat 0.32rem center;
+            background-size: .506667rem .32rem;
+            line-height: 1.333333rem;
+            box-sizing: border-box;
+            padding-left: 0.8rem;
+            border-bottom: 1px solid #F4F4F4;
+        }
+        .plist_box
+        {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top:1.4rem;
+            bottom: 0;
+            // overflow-y: scroll;
+            // background-color: red;
+            .audio_item
+            {
+                width: 9.68rem;
+                height: 1.07rem;
+                border-bottom: 1px solid #F4F4F4;
+                margin: 0 auto;
+                padding-right: 0.245rem;
+                .active_title
+                {
+                    color:#FF4400!important;
+                }
+                .audio_title
+                {
+                    width: 85%;
+                }
+                .player_icon
+                {
+                    height:.48rem;
+                    width: .48rem;
+                    background: url("../../images/box_video_icon.png")  no-repeat center center;
+                    background-size: 100% 100%;
+                   
+                }
+                .plyaer_icon_active
+                {
+                    background-image: url("../../images/box_video_default_icon.png");
+                }
+                .item_num
+                {
+                    font-size: 0.35rem;
+                    color:#999999;
+                }
+                .item_title_audio
+                {
+                    font-size:0.35rem;
+                    color:#333;
+                    padding-left: 0.33rem;
+                }
+            }
+        }
+    }
+}
+
+

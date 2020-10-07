@@ -1,0 +1,23 @@
+.diag_tip
+{
+    .mask
+    {
+        position: relative;
+       
+        .closed
+        {
+            width: .666667rem;
+            height: .666667rem;
+            background: url("../../images/close.png") no-repeat center center;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            margin-top: .666667rem;
+          
+        }
+    }
+    .van-popup
+    {
+        background-color:transparent;
+    }
+}
+

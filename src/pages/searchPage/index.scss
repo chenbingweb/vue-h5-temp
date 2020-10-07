@@ -1,0 +1,93 @@
+.search_page_box
+{
+    box-sizing: border-box;
+    .search_content
+    {
+        width: 10rem;
+        background-color: #fff;
+        position: fixed;
+        left:50%;
+        transform: translateX(-50%);
+        top:0;
+        box-sizing: border-box;
+        padding-left: 0.32rem;
+        padding-top: 0.32rem;
+        // padding-bottom: 0.32rem;
+        .seach_item_content
+        {
+            
+            .search_input_box
+            {
+                width:8.27rem;
+                height: 0.85rem;
+                border-radius: 0.07rem;
+                box-sizing: border-box;
+                padding-left: 0.72rem;
+                padding-right: 0.3rem;
+                background: url("../../images/search_icon.png") no-repeat .32rem center;
+                background-size: .346667rem .373333rem;
+                background-color: #F2F2F3;
+                input{
+                    background-color: #F2F2F3;;
+                    width: 100%;
+                    color:#333;
+                }
+            }
+            .cancel_btn
+            {
+                width: 1.41rem;
+                line-height: 0.85rem;
+                text-align: center;
+                font-size: 0.4rem;
+                color:#FF4400;
+            }
+        }
+       
+      
+        .clear_control
+        {
+            width: 9.36rem;
+            margin:0 auto;
+            height: 1.12rem;
+            padding-top: 0.1rem;
+            box-sizing: border-box;
+            padding-right: 0.32rem;
+            .clear_btn::after
+            {
+                content:"";
+                display: block;
+                width: .32rem;
+                height: .32rem;
+                background: url("../../images/delect_icon.png") no-repeat center center;
+                background-size: 100% 100%;
+                margin-left: 0.12rem;
+            }
+        }
+      
+    }
+    .his_list
+    {
+        padding-top: 2.47rem;
+        background-color: #fff;
+        .his_item:last-child
+        {
+            border:none;
+        }
+        .his_item
+        {
+            width: 9.0rem;
+            height: 1.07rem;
+            margin: 0 auto;
+            border-bottom: 1px solid #F4F4F4;
+            font-size: 0.37rem;
+            color:#666666;
+            .del_btn
+            {
+                width: 0.9rem;
+                height: 0.9rem;
+                background: url("../../images/delect_icon2.png") no-repeat center center;
+                background-size: .266667rem .266667rem;
+            }
+        }
+    }
+}

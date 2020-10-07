@@ -1,0 +1,78 @@
+.buy_box_bnt
+{
+    box-sizing: border-box;
+    height: 1.2rem;
+    .buy_btn_12
+    {
+        width: 9.33rem;
+        height: 0.97rem;
+        background-color: #EB5428;
+        text-align: center;
+        // line-height: 0.97rem;
+        color:#F9F9F9;
+        font-size: 0.37rem;
+        border-radius: 0.45rem;
+    }
+    .item_pop
+    {
+        width:9.36rem;
+        margin:0 auto;
+        height: 1.2rem;
+        border-bottom: 1px solid #EEEEEE;
+        .yzm_title
+        {
+            font-size: 0.4rem;
+            color:#333333;
+            font-weight: bold;
+        }
+
+    }
+    .item_user_box
+    {
+        width:9.36rem;
+        margin:0 auto;
+        height: 1.2rem;
+        font-size: 0.37rem;
+        color:#333333;
+        border-bottom: 1px solid #EEEEEE;
+        .pay_price
+        {
+            color:#FF0000;
+        }
+        .input_box
+        {
+            margin-left: 0.51rem;
+            width: 6rem;
+            height: 1rem;
+            input
+            {
+                width: 100%;
+            }
+        }
+        .get_check_code
+        {
+            width: 1.73rem;
+            height: 0.53rem;
+            text-align: center;
+            line-height: 0.53rem;
+            background-color: #EB5428;
+            color:#FFFFFF;
+            font-size: 0.27rem;
+            border-radius: 0.267rem;
+        }
+    }
+    .sure_send
+    {
+        width:9.33rem;
+        height: 0.97rem;
+        margin: 0 auto;
+        background-color: #EB5428;
+        border-radius: 0.485rem;
+        color:#F9F9F9;
+        font-size: 0.37rem;
+        text-align: center;
+        line-height: 0.97rem;
+        margin-top: 0.57rem;
+    }
+   
+}

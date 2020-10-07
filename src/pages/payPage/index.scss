@@ -1,0 +1,47 @@
+.pay_page
+{
+    box-sizing: border-box;
+    padding-top: 1.55rem;
+    text-align: center;
+    .pay_title
+    {
+        font-size: 0.37rem;
+        color:#333333;
+        margin-bottom: 0.5rem;
+    }
+    .price_show
+    {
+        font-size: 0.93rem;
+        text-align: center;
+        margin-left: 0.15rem;
+    }
+    .price_info_box
+    {
+        align-items: baseline;
+        font-size: 0.43rem;
+        color:#333;
+       
+    }
+    .pay_type
+    {
+        width: 9.3rem;
+        margin: 0 auto;
+        height: 1.3rem;
+        border-top:1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        margin-top: 2.7rem;
+        span:nth-child(1)
+        {
+            background: url("../../images/wxzf_wxicon.png") no-repeat 0.24rem center;
+            background-size: .533333rem .533333rem;
+            padding-left:1rem;
+        }
+        span:nth-child(2)
+        {
+            width: .533333rem;
+            height: .533333rem;
+            background: url("../../images/wxzf_xzlsa.png") no-repeat center center;
+            background-size: .533333rem .533333rem;
+        }
+    }
+}

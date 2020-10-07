@@ -1,0 +1,15 @@
+# This file is a template, and might need editing before it works on your project.
+# see https://docs.gitlab.com/ce/ci/yaml/README.html for all available options
+
+deploy_prod:
+  stage: deploy
+  script:
+    - npm install --registry=https://registry.npm.taobao.org
+    - npm install @sentry/browser
+    - npm install @sentry/integrations
+    - npm run build:prod
+    - xcopy dist C:\xampp\htdocs\website\jian_ban_yi_jie /s /y
+  only:
+    - master
+  tags:
+    - zeqiao_prod_server_windows
