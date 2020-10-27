@@ -63,7 +63,7 @@ function createApp(){
     loading.clear()
   }
 }
-   //createApp()
+   createApp()
 
 
 

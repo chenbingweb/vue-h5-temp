@@ -8,10 +8,16 @@
     "build": "vue-cli-service build",
     "build:prod": "vue-cli-service build --mode prod",
     "build:dev": "vue-cli-service build --mode staging",
+    "watch": "vue-cli-service watch",
     "deploy:dev": "npm run build && cross-env NODE_ENV=dev node ./deploy",
     "deploy:prod": "npm run build && cross-env NODE_ENV=prod node ./deploy",
     "lint": "vue-cli-service lint"
   },
+  "vuePlugins": {
+    "service": [
+      "./vue-cli-plugin-watch"
+    ]
+ },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "@sentry/browser": "^5.18.1",

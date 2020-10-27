@@ -235,6 +235,63 @@ class WXFN{
 			return null;
 		}
 		
-	}
+    }
+    //设置微信分享
+    setShareInfo(title,authUrl,detail,imgUrl) {
+        setTimeout(() => {
+        // config信息验证成功后会执行ready方法
+        wx.updateAppMessageShareData({
+            title: title, // 分享标题
+            desc: detail, // 分享描述
+            link: authUrl, // 分享链接
+            imgUrl:imgUrl, // 分享图标
+            success: function () { //设置成功
+                console.log('share success1',authUrl)
+            },
+            cancel: () => {
+                console.log('share error',authUrl)
+            }
+        });
+        wx.updateTimelineShareData({
+            title: title , // 分享标题
+            link: authUrl, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: ()=> { //设置成功
+                console.log('share success1',authUrl)
+            },
+            cancel: () => {
+                console.log('share error',authUrl)
+            }
+        });
+        wx.onMenuShareAppMessage({
+            // 分享给朋友  ,在config里面填写需要使用的JS接口列表，然后这个方法才可以用
+            title: title, // 分享标题
+            desc: detail, // 分享描述
+            link: authUrl, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: () => {
+                console.log('share success1',authUrl)
+            },
+            cancel: () => {
+                console.log('share error',authUrl)
+            }
+        });
+        wx.onMenuShareTimeline({
+            //分享朋友圈
+            title: title, // 分享标题
+            link: authUrl, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: () => {
+                console.log('share success1',authUrl)
+            },
+            cancel: ()=>{
+                console.log('share error',authUrl)
+            }
+        });
+      
+    
+    
+        }, 10);
+    }
 }
 export default new WXFN();
