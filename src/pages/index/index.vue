@@ -37,7 +37,7 @@
     <!-- 推荐课程 -->
     <div class="recomment_lesson">
       <div class="title flex_start">
-        <title-item title="推荐课程"/>
+        <!-- <title-item title="推荐课程"/> -->
       </div>
       <!-- 列表 -->
       <div class="lesson_list">

@@ -15,7 +15,8 @@ export default {
     Tabbar
   },
   watch:{
-    $route(to,from){
+    $route:{
+      handler(to,from){
       
       this.showBar=to.meta.tabbar||false;
       if(this.showBar)
@@ -31,6 +32,8 @@ export default {
         }
       
 
+      },
+      immediate:true
     }
   },
 

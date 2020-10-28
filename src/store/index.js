@@ -1,13 +1,15 @@
-import Vue from 'vue';
-import Vuex from 'vuex'; //引入 vuex
-import WXFN from "./wxFn.js";
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+import WXFN from "./wxFn.js"
 import home from "./modules/home"
-import detail from "./modules/detail"
 import player from "./modules/player"
+/*store*/
 import App  from "./appFn"
 import { getCode ,userSign,upDateInfo,getDepartment,getJob} from "../api/login.js"
-import { tool } from '../libs/Tool.js';
-import { pay } from '../api/detail.js';
+import { tool } from '../libs/Tool.js'
+import { pay } from '../api/detail.js'
+
 Vue.use(Vuex); //使用 vuex
 
 export default new Vuex.Store({
@@ -28,8 +30,8 @@ export default new Vuex.Store({
     },
     modules:{
         home,
-        detail,
-        player
+        player,
+        /*modules*/
     },
     getters: {
         // ...

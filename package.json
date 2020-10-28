@@ -17,7 +17,7 @@
     "service": [
       "./vue-cli-plugin-watch"
     ]
- },
+  },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "@sentry/browser": "^5.18.1",
