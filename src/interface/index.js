@@ -1,6 +1,6 @@
-import _interface from "./interface"
+import _interface from "./interface";
 export default {
-    install:function(Vue,option){
-       Vue.prototype.$interface=_interface
-    }
-  }
+  install: function(Vue, option) {
+    Vue.prototype.$interface = _interface;
+  },
+};

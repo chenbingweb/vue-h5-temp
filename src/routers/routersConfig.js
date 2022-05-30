@@ -1,5 +1,6 @@
-
-import Home from '../pages/index/index.vue'	
+import Home from "../pages/index/index.vue";
+import detail from "../pages/detail/index.vue";
+import detail2 from "../pages/detail2/index.vue";
 /*imortant*/
 /**/
 // const Home = () => import(/* webpackChunkName: "home" */ '../pages/index/index.vue');
@@ -14,24 +15,40 @@ import Home from '../pages/index/index.vue'
 // const Detail =()=>import(/* webpackChunkName:"myCenter"*/ '../pages/detail/detail.vue')
 // const Test =()=>import(/* webpackChunkName:"myCenter"*/ '../pages/test/index.vue')
 
-
 export default [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-      meta:{
-        tabbar:false,
-        title:'医阶'
-      },
-      children: [
-        
-      ],
+  {
+    path: "/",
+    name: "home",
+    component: Home,
+    meta: {
+      tabbar: false,
+      title: "医阶",
     },
-    /*router*/
-    {
-      path: "*",
-      redirect: "/"
-    }
-
-]
+    children: [],
+  },
+  {
+    path: "/detail",
+    name: "detail",
+    component: detail,
+    meta: {
+      tabbar: false,
+      title: "页面标题",
+    },
+    children: [],
+  },
+  {
+    path: "/detail2",
+    name: "detail2",
+    component: detail2,
+    meta: {
+      tabbar: false,
+      title: "页面标题",
+    },
+    children: [],
+  },
+  /*router*/
+  {
+    path: "*",
+    redirect: "/",
+  },
+];

@@ -24,7 +24,10 @@ module.exports = {
     publicPath:"/",
     css: {
         loaderOptions: {
-          css: {},
+          css: {
+           
+          },
+          
           postcss: {
             plugins: [
               require('postcss-px2rem')({

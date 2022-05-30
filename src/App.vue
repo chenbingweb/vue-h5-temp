@@ -1,63 +1,56 @@
 <template>
   <div id="app">
-    <transition :name="transitionName">  
+    <transition :name="transitionName">
       <router-view></router-view>
     </transition>
-    <Tabbar :show="showBar"/>
+    <!-- <Tabbar :show="showBar" /> -->
   </div>
 </template>
 
 <script>
-import Tabbar from "./components/tabbar/tabbar"
+// import Tabbar from "./components/tabbar/tabbar";
 export default {
-  name: 'app',
-  components:{
-    Tabbar
+  name: "app",
+  components: {
+    // Tabbar,
   },
-  watch:{
-    $route:{
-      handler(to,from){
-      
-      this.showBar=to.meta.tabbar||false;
-      if(this.showBar)
-      {
-        $('body').addClass('bm')
-      }
-      //如果to索引大于from索引,判断为前进状态,反之则为后退状态
-      if(to.meta.index > from.meta.index){
-          //设置动画名称
-          this.transitionName = 'slide-left';
-        }else{
-          this.transitionName = 'slide-right';
+  watch: {
+    $route: {
+      handler(to, from) {
+        this.showBar = to.meta.tabbar || false;
+        if (this.showBar) {
+          $("body").addClass("bm");
         }
-      
-
+        //如果to索引大于from索引,判断为前进状态,反之则为后退状态
+        if (to.meta.index > from.meta.index) {
+          //设置动画名称
+          this.transitionName = "slide-left";
+        } else {
+          this.transitionName = "slide-right";
+        }
       },
-      immediate:true
-    }
+      immediate: true,
+    },
   },
 
-  data:()=>{
+  data: () => {
     return {
-      showBar:false,
-      active:false,
-      transitionName:''
-    }
+      showBar: false,
+      active: false,
+      transitionName: "",
+    };
   },
 
-  created(){
-    console.log(this.$tool)
-   
+  created() {
+    console.log(this.$tool);
   },
-  mounted(){
-   
-  }
-}
+  mounted() {},
+};
 </script>
 
 <style>
 @import "./app.css";
-  .slide-right-enter-active,
+.slide-right-enter-active,
 .slide-right-leave-active,
 .slide-left-enter-active,
 .slide-left-leave-active {
@@ -87,8 +80,7 @@ export default {
   width: 100%;
 }
 
-.bm
-{
+.bm {
   padding-bottom: 1.333333rem;
 }
 
@@ -96,12 +88,11 @@ export default {
   /* display: flex;
   justify-content: flex-start; */
 }
-.box
-{
+.box {
   width: 750px;
   height: 100px;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   background: red;
 }
 </style>
